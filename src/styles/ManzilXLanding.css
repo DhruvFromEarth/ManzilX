@@ -1,0 +1,211 @@
+/* Global Reset & Prevent Horizontal Overflow */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #003333;
+}
+
+/* Main Container */
+.landing-container {
+  width: 100vw; /* full width */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+.landing-header {
+  background: linear-gradient(to right, #004d40, #00e6b0);
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  /* background: rgba(145, 234, 145, 0.678); */
+  padding: 4rem 2rem;
+  width: 100%;
+  background: linear-gradient(to right, #005c4b, #00e6a8);
+  color: white;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00e6b0;
+  color: #003333;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 2rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00cc99;
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #060606e6;
+  width: 100%;
+}
+
+.feature {
+  background: #002a24;
+  color: #00e6a8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+
+  width: 300px;
+  /* background-color: rgb(10, 98, 10); */
+  border-radius: 12px;
+  padding: 2rem;
+  /* box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1); */
+  text-align: center;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00e6a88f;
+}
+
+.feature h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #d0f5ee;
+}
+
+/* College Showcase */
+/* .college-showcase {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+} */
+
+/* .colleges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+} */
+
+/* .college-card {
+  width: 200px;
+} */
+
+/* .college-card img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 77, 64, 0.2);
+  transition: transform 0.3s ease;
+} */
+
+.college-showcase {
+  padding: 60px 20px;
+  background-color: #001f20;
+  text-align: center;
+  color: #00e39f;
+}
+
+.college-showcase h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.colleges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.college-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.college-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 6px #00e39f44);
+}
+
+.college-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Brochure Download Button */
+.download-btn {
+  display: block;
+  margin-top: 0.75rem;
+  background-color: #00e6b0;
+  color: #003333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #004d40;
+  color: white;
+  width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

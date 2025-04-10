@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/ManzilXLanding.css';
-// import Navbar from '../components/Navbar';
 
 const ManzilXLanding = () => {
   return (

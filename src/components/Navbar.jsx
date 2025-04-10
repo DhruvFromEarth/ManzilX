@@ -1,17 +1,18 @@
-import React from 'react';
-import '../styles/Navbar.css';
+import React from 'react'; 
+import '../styles/Navbar.css';// Make sure this path matches your project structure
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-logo">ManzilX</div>
+    <div className="navbar">
+      <div className="nav-logo">
+        Manzil<span style={{ color: 'white' }}>X</span>
+      </div>
       <ul className="nav-links">
-        <li><a href="#home">Home
-        </a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

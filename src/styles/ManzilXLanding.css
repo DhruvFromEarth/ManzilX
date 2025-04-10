@@ -1,4 +1,3 @@
-/* Global Reset & Prevent Horizontal Overflow */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 html, body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
@@ -14,33 +13,34 @@ html, body {
   color: #003333;
 }
 
-/* Main Container */
 .landing-container {
-  width: 100vw; /* full width */
-  margin: 0;
+  margin-top: 10vh;
   padding: 0;
+  width: 100vw;
   overflow-x: hidden;
 }
 
-/* Header */
 .landing-header {
   background: linear-gradient(to right, #004d40, #00e6b0);
-  padding: 3rem 1rem;
+  padding: 4rem 1rem 2rem;
   text-align: center;
   color: white;
-  width: 100%;
+  width: 100vw;
 }
 
-/* Hero Section */
+.landing-header .logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
 .hero-section {
-  /* background: rgba(145, 234, 145, 0.678); */
+  margin-top: 80px;
   padding: 4rem 2rem;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(to right, #005c4b, #00e6a8);
   color: white;
   text-align: center;
   animation: fadeInUp 1s ease-in-out;
-
 }
 
 .hero-section h2 {
@@ -50,12 +50,11 @@ html, body {
 
 .hero-section p {
   font-size: 1.1rem;
-  color: #333;
+  color: #d0f5ee;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* CTA Button */
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -69,10 +68,10 @@ html, body {
 }
 
 .cta-button:hover {
+  color: whitesmoke;
   background-color: #00cc99;
 }
 
-/* Features Section */
 .features-section {
   display: flex;
   justify-content: center;
@@ -80,20 +79,16 @@ html, body {
   gap: 2rem;
   padding: 4rem 2rem;
   background-color: #060606e6;
-  width: 100%;
+  width: 100vw;
 }
 
 .feature {
   background: #002a24;
   color: #00e6a8;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 0 transparent;
-
   width: 300px;
-  /* background-color: rgb(10, 98, 10); */
   border-radius: 12px;
   padding: 2rem;
-  /* box-shadow: 0 4px 8px rgba(0, 77, 64, 0.1); */
   text-align: center;
 }
 
@@ -111,41 +106,15 @@ html, body {
 .feature p {
   font-size: 1rem;
   font-weight: 400;
-  color: #d0f5ee;
+  color: #d0f5ee;
 }
-
-/* College Showcase */
-/* .college-showcase {
-  padding: 3rem 2rem;
-  background-color: #ffffff;
-  text-align: center;
-  width: 100%;
-} */
-
-/* .colleges {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
-} */
-
-/* .college-card {
-  width: 200px;
-} */
-
-/* .college-card img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 77, 64, 0.2);
-  transition: transform 0.3s ease;
-} */
 
 .college-showcase {
   padding: 60px 20px;
   background-color: #001f20;
   text-align: center;
   color: #00e39f;
+  width: 100vw;
 }
 
 .college-showcase h2 {
@@ -159,6 +128,7 @@ html, body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  width: 100%;
 }
 
 .college-card {
@@ -172,13 +142,13 @@ html, body {
   height: auto;
   margin-bottom: 12px;
   filter: drop-shadow(0 0 6px #00e39f44);
+  transition: transform 0.3s ease;
 }
 
 .college-card img:hover {
   transform: scale(1.05);
 }
 
-/* Brochure Download Button */
 .download-btn {
   display: block;
   margin-top: 0.75rem;
@@ -188,15 +158,6 @@ html, body {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-}
-
-/* Footer */
-.landing-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: #004d40;
-  color: white;
-  width: 100%;
 }
 
 @keyframes fadeInUp {

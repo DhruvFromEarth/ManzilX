@@ -2,6 +2,25 @@ import React from 'react';
 import '../styles/ManzilXLanding.css';
 
 const ManzilXLanding = () => {
+
+  const colleges = [
+    {
+      img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+      brochure: '/brochure1.pdf',
+      name: 'IIT Delhi'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+      brochure: '/brochure2.pdf',
+      name: 'IIM Bangalore'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1614851099511-20c905f1e4d5',
+      brochure: '/brochure3.pdf',
+      name: 'NIT Trichy'
+    },
+  ];
+
   return (
     <div className="landing-container">
       <header className="landing-header">
@@ -36,10 +55,10 @@ const ManzilXLanding = () => {
       <section className="college-showcase">
         <h2>Trusted By These Institutions</h2>
         <div className="colleges">
-          {[1, 2, 3, 4].map(num => (
-            <div key={num} className="college-card">
-              <img src={`/college${num}.jpg`} alt={`College ${num}`} />
-              <a href={`/brochure${num}.pdf`} download className="download-btn">
+          {colleges.map((college, idx) => (
+            <div key={idx} className="college-card">
+              <img src={college.img} alt={college.name} />
+              <a href={college.brochure} download className="download-btn">
                 Download Brochure
               </a>
             </div>

@@ -19,6 +19,36 @@ const ManzilXLanding = () => {
       brochure: '/brochure3.pdf',
       name: 'NIT Trichy'
     },
+    {
+      img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+      brochure: '/brochure1.pdf',
+      name: 'IIT Delhi'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+      brochure: '/brochure2.pdf',
+      name: 'IIM Bangalore'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+      brochure: '/brochure1.pdf',
+      name: 'IIT Delhi'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+      brochure: '/brochure2.pdf',
+      name: 'IIM Bangalore'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+      brochure: '/brochure1.pdf',
+      name: 'IIT Delhi'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+      brochure: '/brochure2.pdf',
+      name: 'IIM Bangalore'
+    },
   ];
 
   return (
@@ -58,6 +88,7 @@ const ManzilXLanding = () => {
           {colleges.map((college, idx) => (
             <div key={idx} className="college-card">
               <img src={college.img} alt={college.name} />
+              <div>{college.name}</div>
               <a href={college.brochure} download className="download-btn">
                 Download Brochure
               </a>

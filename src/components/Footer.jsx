@@ -10,7 +10,7 @@ export default function Footer() {
         <p>Stay updated with new, career tips, and accurated course!</p>
         <form>
           <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
+          <button type="submit" id='submit-btn'>Subscribe</button>
         </form>
       </div>
 

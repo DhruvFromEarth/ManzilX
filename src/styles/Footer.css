@@ -1,44 +1,50 @@
-
 .footer-section {
-    background-color: #040e26;
-    color: white;
-    padding: 24px 16px; /* reduced from 40px 20px */
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .newsletter h2 {
-    font-size: 1.5rem; /* slightly reduced */
-    margin-bottom: 8px;
-  }
-  
-  .newsletter p {
-    font-size: 0.95rem;
-    margin-bottom: 16px;
-    color: #cbd5e1;
-  }
-  
-  .newsletter form {
-    gap: 8px; /* tighter spacing */
-  }
-  
-  .newsletter input {
-    padding: 8px;
-    min-width: 220px;
-  }
-  
-  .newsletter button {
-    padding: 8px 14px;
-  }
-  
-  .footer-container {
-    margin-top: 20px; /* was 30px */
-    gap: 14px;
-  }
-  
-  
-  .footer-links {
-    margin-top: 16px;
-    font-size: 0.85rem;
-  }
-  
+  background-color: #040e26;
+  color: white;
+  padding: 24px 16px;
+  /* reduced from 40px 20px */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  /* slightly reduced */
+  margin-bottom: 8px;
+}
+
+.newsletter p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: #cbd5e1;
+}
+
+.newsletter form {
+  gap: 8px;
+  /* tighter spacing */
+}
+
+#submit-btn{
+  margin: 0%;
+  margin-left: 10px;
+  padding: 8px;
+  border: none;
+}
+
+.newsletter input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  min-width: 220px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  /* was 30px */
+  gap: 14px;
+}
+
+.footer-links {
+  margin-top: 16px;
+  font-size: 0.85rem;
+}

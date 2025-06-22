@@ -7,7 +7,7 @@ const JobApplication = require('../models/jobApplication.model');
 // @access  Public
 router.post('/apply', async (req, res) => {
     try {
-        const { name, email, phone, resume } = req.body;
+        const { name, email, phone, resume, jobTitle } = req.body;
 
         if (!name || !email || !phone) {
             return res.status(400).json({ msg: 'Please enter all required fields' });
@@ -21,7 +21,8 @@ router.post('/apply', async (req, res) => {
             name,
             email,
             phone,
-            resume: resume || 'Not provided'
+            resume: resume || 'Not provided',
+            jobTitle: jobTitle || 'General Application'
         });
 
         const savedApplication = await newApplication.save();

@@ -1,47 +1,50 @@
+// Amity 
+// DPU pune 
+// NMIMS mumbai
+// LPU
+// Manipal sikkim
+// Manipal jaipur 
+// Uttaranchal university dehradun 
+// Shoolini solan himachal pradesh
 export const colleges = [
   {
-    img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+    img: 'src/assets/amity.png',
     brochure: '/brochure1.pdf',
-    name: 'IIT Delhi'
+    name: 'Amity University'
   },
   {
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+    img: 'src/assets/dpu.png',
     brochure: '/brochure2.pdf',
-    name: 'IIM Bangalore'
+    name: 'DPU Pune'
   },
   {
-    img: 'https://images.unsplash.com/photo-1614851099511-20c905f1e4d5',
+    img: 'src/assets/nmims.png',
     brochure: '/brochure3.pdf',
-    name: 'NIT Trichy'
+    name: 'NMIMS Mumbai'
   },
   {
-    img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+    img: 'src/assets/lpu.png',
     brochure: '/brochure1.pdf',
-    name: 'IIT Delhi'
+    name: 'LPU'
   },
   {
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+    img: 'src/assets/manipal_sikkim.png',
     brochure: '/brochure2.pdf',
-    name: 'IIM Bangalore'
+    name: 'Manipal Sikkim'
   },
   {
-    img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+    img: 'src/assets/manipal_jaipur.png',
     brochure: '/brochure1.pdf',
-    name: 'IIT Delhi'
+    name: 'Manipal Jaipur'
   },
   {
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
+    img: 'src/assets/uttaranchal_university.png',
     brochure: '/brochure2.pdf',
-    name: 'IIM Bangalore'
+    name: 'Uttaranchal University Dehradun'
   },
   {
-    img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
+    img: 'src/assets/shoolini_solan.png',
     brochure: '/brochure1.pdf',
-    name: 'IIT Delhi'
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc',
-    brochure: '/brochure2.pdf',
-    name: 'IIM Bangalore'
-  },
+    name: 'Shoolini Solan Himachal Pradesh'
+  }
 ];

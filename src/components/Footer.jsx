@@ -16,14 +16,15 @@ export default function Footer() {
 
       {/* Main Footer Content */}
       <div className="footer-container">
+      <p>For any query mail at <a href="mailto:AdarshKiMailId@gmail.com">AdarshKiMailId@gmail.com</a></p>
         <p>&copy; {new Date().getFullYear()} ManzilX. All rights reserved.</p>
       </div>
 
-      <div className="footer-links">
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Service</a> | 
-        <a href="#">Contact</a>
-      </div>
+      {/* <div className="footer-links">
+        <a href="/">Privacy Policy</a> | 
+        <a href="/">Terms of Service</a> | 
+        <a href="/">Contact</a>
+        </div> */}
     </footer>
   );
 }

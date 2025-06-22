@@ -1,5 +1,7 @@
 .footer-section {
-  background-color: #040e26;
+  background-color: #0b0b0b;
+  justify-self: end;
+  width: 100vw;
   color: white;
   padding: 24px 16px;
   /* reduced from 40px 20px */
@@ -32,6 +34,8 @@
 }
 
 .newsletter input {
+  background-color: white;
+  color: black;
   padding: 8px;
   border-radius: 8px;
   border: none;
